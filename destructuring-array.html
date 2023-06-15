@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const log = console.log;
+      // Destructuring Array.
+
+      // Problem before Destructuring Array.
+      // Nested array.
+
+      const user = ["Michal Clarke", 34, ["Smith", 25000]];
+
+      const name = user[0];
+      const age = user[1];
+      log(age);
+
+      // Problem Solving by Destructuring Array.
+      //  And using nested array and Rest Operator.
+      //   const a = ([name, age, [...args]] = user);
+      //   log(a);
+
+      // function parameter we have destructuring array.
+
+      // function user([name, age = 44, city]) {
+      //   log(age);
+      // }
+
+      // user(["yahoo Baba", 22, "Delhi"]);
+
+      // Destructuring Object {}
+
+      function user1({ name }) {
+        log(name);
+      }
+
+      user1({ name: "Music is good", age: 20, song: "yarra" });
+    </script>
+  </body>
+</html>

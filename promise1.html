@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let restaurant_state = false;
+
+      //   let prom = new Promise(function (resolve, reject) {
+      //     console.log(" pending state");
+      //     if (restaurant_state) {
+      //       resolve("promise : We had the Dinner at restaurant");
+      //     } else {
+      //       reject("prmosie: No dinner at resturant");
+      //     }
+      //   });
+
+      const restaurant_state_food = [
+        {
+          id: 1,
+          name: "Ram",
+          food: "Mandi",
+          Roti: 5,
+          chikenBriyani: "2 Plates",
+        },
+
+        {
+          id: 2,
+          food: "Mandi",
+          Roti: 10,
+          chikenBriyani: "2 Plates",
+        },
+      ];
+
+      function prom(restaurant_state_food) {
+        return new Promise(function (resolve, reject) {
+          console.log(" pending state");
+          setTimeout(() => {
+            if (restaurant_state_food) {
+              //resolve("promise : We had the Dinner at restaurant");
+              resolve(restaurant_state_food);
+            } else {
+              reject("prmosie: No dinner at resturant");
+            }
+          }, 1000);
+        });
+      }
+
+      console.log(prom(restaurant_state_food));
+    </script>
+  </body>
+</html>

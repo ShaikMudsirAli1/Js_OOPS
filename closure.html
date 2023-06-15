@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  Closure.
+      //   const name = "say";
+
+      // Outer function
+      //   function closure(name) {
+      //     function Hii() {
+      //       console.log(`${name}`);
+      //     }
+
+      //     function Me() {
+      //       console.log(`${name}`);
+      //     }
+
+      //     Hii();
+      //     Me();
+      //   }
+
+      //   closure("say");
+
+      function amazon() {
+        // I have to store the items.
+        let carts = [];
+
+        function addToCart(cart) {
+          carts.push(cart);
+        }
+
+        function completeCart(cartId) {
+          const cart = carts.find((c) => c.id === cartId);
+          if (cart) {
+            cart.itemadded = true;
+          }
+        }
+
+        function getCart() {
+          return carts;
+        }
+
+        return {
+          addToCart,
+          completeCart,
+          getCart,
+        };
+      }
+      // In my manageCart I have complete closure.
+
+      const manageCart = amazon();
+
+      manageCart.addToCart({
+        id: 1,
+        shoppingItem: "Clothes",
+        itemadded: false,
+      });
+
+      manageCart.addToCart({ id: 2, shoppingItem: "Laptop", itemadded: false });
+
+      manageCart.completeCart(1);
+      manageCart.completeCart(2);
+
+      const allCart = manageCart.getCart();
+      console.log(allCart);
+    </script>
+  </body>
+</html>

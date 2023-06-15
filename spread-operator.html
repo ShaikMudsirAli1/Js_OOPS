@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Operator</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const log = console.log;
+      //   const array1 = [44, 55, 66];
+
+      //   array2 = [...array1];
+      //   array1.push(50);
+      //   log(array2);
+      //   log(array1);
+
+      // Spread operator
+      //   const array_spread = [666, 999, 8888];
+
+      //   log(...array_spread);
+      //   log([...array_spread]);
+
+      // Concating  with multiple array in third array.
+
+      //   const array_1 = [5, 6, 7];
+
+      //   const array_2 = [8, 9, 10];
+
+      //   const array_3 = [4, ...array_1, 6, ...array_2, 11];
+
+      // * Concating  with multiple Object {} in third {}.
+
+      const object_1 = {
+        name: "Mudsir",
+        food: "Mandi",
+      };
+
+      const object_2 = {
+        age: 27,
+      };
+
+      const object_3 = { ...object_1, ...object_2 };
+
+      log(object_3);
+
+      log(array_3);
+    </script>
+  </body>
+</html>

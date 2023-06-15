@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Array iteration: 8 methods
+
+      // for each
+
+      //   [1, 2, 3].forEach((item, index) => {
+      //     console.log(index);
+      //   });
+
+      //   // map
+      const three = [1, 2, 3];
+
+      const doubled = three.map((item, index) => item * 2);
+
+      console.log(doubled);
+
+      // // Array
+
+      // const a = [300, 500, 800].forEach((item, index) =>
+      //   console.log(item, index)
+
+      // );
+
+      // filter
+
+      // const ints = [1, 2, 3];
+
+      //   //  It returns true  in the array [];
+      // const evens = ints.filter((item) => item % 2 === 0);
+      // console.log(evens);
+
+      // reduce
+
+      // const sum = [1, 2, 3].reduce(function (result, item) {
+      //   return result + item;
+      // }, 0);
+
+      // console.log(sum);
+
+      // //some
+      // const hasNegativeNumbers = [1, 2, 3, -1, 4].some((item) => item < 0);
+      // console.log(hasNegativeNumbers);
+
+      // every it checks complete numbers in an array.
+
+      // const allPositiveNumbers = [1, 2, 3].every((item) => item > 0);
+      // console.log(allPositiveNumbers);
+
+      // find
+      // const objects = [{ id: "a" }, { id: "b" }, { id: "c" }];
+
+      // const found = objects.find((item) => item.id === "b");
+      // const found1 = objects.find((item) => item.id === "c");
+      // console.log(found, found1);
+
+      // find index
+
+      // const object2 = [{ id: "a" }, { id: "b" }, { id: "c" }];
+      // const foundIndex = object2.findIndex((item) => item.id === "d");
+      // console.log(foundIndex);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+       =>      @resource = " Yahoo Baba "   <=
+OOP : Object  Oriented Programming  integrated in ES6 Version
+ 
+
+     oop  is coding methodology / style / pattern .
+
+     . CODE MORE MODULAR AND RESUABLE.
+
+     . WELL ORGANSED CODE
+
+     .  EASIER TO DEBUG
+
+     .  BEST FOR MEDIUM TO LARGE WEBSITE PROJECTS....
+
+
+     CLASS : IS BLUE PRINT  WITH THE HELP OF CLASS WE CAN CREATE OBJECT.
+   
+              EXAMPLE : HOUSE BLUE PRINT WHICH THREE ROOMS.
+     OBJECT :  SO WTIH THE HELP OF CLASS WE CAN CREATE A OBJECT.
+
+               EXAMPLE :  WE HAVE THREE ROOM IN EVERY HOME OBJECT
+
+               CONST HOME = {
+                  OBJ:1,
+                  OBJ:2.
+                  OBJ:3
+               }
+
+
+               

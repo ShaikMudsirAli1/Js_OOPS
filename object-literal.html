@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const log = console.log;
+
+      //   const name = "Shaik";
+      //   const course = "React JS";
+
+      //   const obj = {
+      //     name,
+      //     course,
+      //   };
+
+      //   log(obj);
+
+      // Use variable has property name in es6
+
+      // const n = "student";
+
+      // const obj1 = {
+      //   [n + "name"]: "shaik",
+      //   course: "Btech",
+      //   detail() {
+      //     return `${this.studentname} is student of ${this.course}`;
+      //   },
+      // };
+      // log(obj1);
+      // log(obj1.name);
+      // document.write(obj1.detail());
+
+      // Create  function that returns object
+
+      const name = "Green";
+      const age = 25;
+      const living = "as cricketer";
+      const player = "Australia";
+
+      const cricketer = () => {
+        let full_Detail = age + " " + player;
+        return {
+          name,
+          full_Detail,
+          living,
+        };
+      };
+
+      const s = cricketer(name, age, living);
+      log(s.name);
+      log(s.full_Detail);
+    </script>
+  </body>
+</html>
